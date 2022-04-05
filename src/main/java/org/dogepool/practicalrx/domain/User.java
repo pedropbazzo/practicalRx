@@ -62,7 +62,7 @@ public class User {
 
     @Override
     public int hashCode() {
-        int result = (int) (id ^ (id >>> 32));
+        int result = (int) (id ^ (id >>> ?));
         result = 31 * result + nickname.hashCode();
         return result;
     }
